@@ -64,14 +64,15 @@ def update_sales_worksheet(data):
     sales_worksheet.append_row(data)
     print("sales worksheet updated successfully.\n")
     
-def update_surplus_worksheet(new_surplus_data):
+def update_surplus_worksheet(data):
     """
     Get the surplus data calculated by calculate_surplus_data
     and append it to the surplus worksheet.
     """
     print("Updating surplus worksheet...\n")
     surplus_worksheet = SHEET.worksheet("surplus")
-    surplus_worksheet.append_row(new_surplus_data)
+    surplus_worksheet.append_row(data)
+    print("Surplus worksheet updated successfully.\n")
     
 
 def calculate_surplus_data(sales_row):
